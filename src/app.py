@@ -9,7 +9,9 @@ def index():
 def new_function():
     return 2 + 3
 
-
+def new_function2():
+    return new_function()
+    
 if __name__ == "__main__":
     app.run()
 
