@@ -1,5 +1,5 @@
 
-from app import index, new_function
+from app import index, new_function, new_function2
 
 
 def test_index():
