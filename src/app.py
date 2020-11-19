@@ -19,7 +19,7 @@ def get_data_test_val():
     cursor = conn.cursor()
     cursor.execute('select min(starttime) from AugmentedStateTransactions')
     return_list = list(cursor.fetchall())
-return return_list
+    return return_list
 
 if __name__ == "__main__":
    app.run(debug=False, port=4000, host='0.0.0.0')
