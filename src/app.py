@@ -22,5 +22,5 @@ def get_data_test_val():
 return return_list
 
 if __name__ == "__main__":
-    app.run()
+   app.run(debug=False, port=4000, host='0.0.0.0')
 
