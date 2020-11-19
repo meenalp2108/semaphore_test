@@ -37,7 +37,6 @@ jobs:
         pm2 start run_service.py --name analysis_service_daemon
         Pop-Location
 
-
         Start-Sleep -s 60
     
         pm2 ls
