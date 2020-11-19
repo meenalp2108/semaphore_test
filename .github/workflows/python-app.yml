@@ -34,7 +34,7 @@ jobs:
               
         $analysis_path = "$current_folder\src"
         Push-Location $analysis_path
-        pm2 start app.py --name analysis_service_daemon
+        pm2 start run_service.py --name analysis_service_daemon
         Pop-Location
 
 
