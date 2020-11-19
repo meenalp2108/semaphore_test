@@ -19,7 +19,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         if(Test-Path requirements.txt) { pip install -r requirements.txt}
-        $current_folder = Get-Location        
+        $current_folder = Get-Location    
+        npm install
+        npm install pm2 -g    
     - name: Test with pytest
       run: |
         Start-Sleep -s 60
