@@ -16,7 +16,7 @@ params = {
         "n" : 120
     }
 
-resp = requests.post('http://10.1.0.4:4000/get_data_test_val', json=params)
+resp = requests.post('http://172.16.55.145:4000/get_data_test_val', json=params)
 print(resp)
 print(resp.json())
 
