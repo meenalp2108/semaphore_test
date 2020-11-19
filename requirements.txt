@@ -1,3 +1,5 @@
 flask
 pytest
 gevent
+flask_cors
+pyodbc
