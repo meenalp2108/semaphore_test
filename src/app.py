@@ -1,6 +1,9 @@
 
 from flask import Flask, request
 from flask_cors import CORS
+import pyodbc
+import json
+
 app = Flask(__name__)
 @app.route("/")
 
