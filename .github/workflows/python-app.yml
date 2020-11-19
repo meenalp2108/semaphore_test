@@ -39,8 +39,12 @@ jobs:
 
         Start-Sleep -s 60
     
+        pm2 describe analysis_service_daemon
         pm2 ls
         pm2 env 0
+        Start-Sleep -s 60
+        python test_api.py
+        pm2 logs analysis_service_daemon [--lines 25]
        
         Start-Sleep -s 60
         pytest
