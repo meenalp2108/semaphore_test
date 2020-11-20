@@ -3,11 +3,8 @@ from src.app import index, new_function
 
 
 def test_index():
-    assert index() == "Hello world !"
+    assert index() == "Hello World !"
     
-def test_new_function():
-    assert new_function() == 5
-
 import requests
 
 params = {
