@@ -3,7 +3,7 @@ from src.app import index, new_function
 
 
 def test_index():
-    assert index() == "Hello World !"
+    assert index() == "Hello, World !"
     
 import requests
 
